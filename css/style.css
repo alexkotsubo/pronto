@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-	min-width: 94px;
+	min-width: 105px;
 	max-width: 100%;
 }
 
@@ -543,6 +543,7 @@ a.social__text:hover {
 
 .nav__right {
 	flex: 0 1 100%;
+	align-self: flex-end;
 }
 
 .nav__socials {
@@ -1929,8 +1930,11 @@ li.footer__menu-title::before {
 /* Media */
 
 @media (max-width: 930px) {
-
 	/* Nav */
+
+	.nav__right {
+		align-self: center;
+	}
 
 	.nav__top-body {
 		flex-direction: column;
