@@ -263,7 +263,8 @@ a.social__text:hover {
 }
 
 .social__social {
-	margin-left: 25px;
+	align-self: flex-end;
+	margin-left: 30px;
 }
 
 /* Learning Popup */
