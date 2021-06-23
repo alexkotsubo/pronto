@@ -497,15 +497,6 @@ a.social__text:hover {
 	margin-right: 15px;
 }
 
-.nav__flags {
-	margin-right: 15px;
-}
-
-.nav__left-symbol img {
-	max-width: 100%;
-	min-width: 50px;
-}
-
 .nav__top {
 	overflow: hidden;
 	background: #1a2e53;
