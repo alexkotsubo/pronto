@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-	max-width: 900px;
+	max-width: 1000px;
 	padding: 0 15px;
 	margin: 0 auto;
 	width: 100%;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-	min-width: 80px;
+	min-width: 88px;
 	max-width: 100%;
 }
 
