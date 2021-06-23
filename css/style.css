@@ -262,6 +262,10 @@ a.social__text:hover {
 	text-decoration: underline;
 }
 
+.social__social {
+	margin-left: 15px;
+}
+
 /* Learning Popup */
 
 .learning-popup .popup__body {
