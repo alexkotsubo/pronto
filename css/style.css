@@ -1371,6 +1371,15 @@ a.social__text:hover {
 	color: #868E96;
 }
 
+.questions__cart-item {
+	padding: 10px;
+	border-bottom: 1px solid #BEBEBE;
+}
+
+.questions__cart-item:last-child {
+	border-bottom: none;
+}
+
 /* Lessons */
 
 .lessons {
