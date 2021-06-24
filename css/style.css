@@ -1485,6 +1485,7 @@ a.social__text:hover {
 }
 
 .footer__label-title {
+	align-self: flex-start;
 	margin-top: 20px;
 	font-weight: 600;
 	font-size: 25px;
