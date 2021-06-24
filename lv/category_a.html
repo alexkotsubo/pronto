@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pronto | Price</title>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&family=Noto+Sans&family=Noto+Serif:wght@700&family=Roboto&display=swap" rel="stylesheet">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Favicon -->
+</head>
+<body>
+
+	<div id="learning-popup" class="learning-popup popup">
+		<div class="learning-popup__body popup__body">
+			<div class="learning-popup__close popup__close">
+				<img src="../img/icons/close.svg" alt="close">
+			</div>
+
+			<h2 class="learning-popup__title">Записаться на обучение</h2>
+
+			<form action="#" class="learning-form">
+				<div class="learning-form__row">
+					<div class="input-block">
+						<label>
+							Имя:
+							<input type="text" class="input-block__input" placeholder="Имя">
+						</label>
+					</div>
+
+					<div class="input-block">
+						<label>
+							Телефон или почта:
+							<input type="text" class="input-block__input" placeholder="Введите свой номер телефона или почту">
+						</label>
+					</div>
+				</div>
+
+				<div class="learning-form__row">
+					<div class="input-block">
+						<label>
+							Выберите категорию:
+							<select class="learning-form__select" name="state">
+								<option value="A">A категория</option>
+								<option value="B">B категория</option>
+								<option value="C">C категория</option>
+								<option value="D">D категория</option>
+								<option value="E">E категория</option>
+								<option value="95">95 код</option>
+								<option value="ambulance">Первая помощь</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="input-block">
+						<label>
+							Время обучения:
+							<select class="learning-form__select" name="state">
+								<option value="morning">Утренний</option>
+								<option value="day">Дневной</option>
+								<option value="evening">Вечерний</option>
+							</select>
+						</label>
+					</div>
+				</div>
+
+				<textarea class="learning-form__textarea textarea-block" placeholder="Введите текст сообщения"></textarea>
+
+				<div class="learning-form__block">
+					<button type="submit" class="btn btn_big learning-form__btn">Отправить сообщение</button>
+					<img src="../img/captcha.png" alt="captcha" class="learning-form__captcha">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<!-- Nav -->
+
+		<nav class="nav" id="nav">
+			<div class="nav__top">
+				<div class="container">
+					<div class="nav__top-body">
+						<div class="nav__left">
+							<a href="#" class="nav__logo logo">
+								<img src="../img/pronto.png" alt="pronto logo">
+							</a>
+
+							<ul class="nav__flags flags">
+								<li><a href="https://alexkotsubo.github.io/pronto/index.html"><img src="../img/flags/ru.jpg" alt="ru"></a></li>
+								<li><a href="https://alexkotsubo.github.io/pronto/lv/index.html"><img src="../img/flags/lv.jpg" alt="lv"></a></li>
+							</ul>
+						</div>
+
+						<div class="nav__right">
+							<div class="nav__socials">
+								<a href="#" class="nav__socials-link">
+									<img src="../img/icons/instagram.svg" alt="instagram">
+								</a>
+
+								<a href="#" class="nav__socials-link">
+									<img src="../img/icons/facebook.svg" alt="facebook">
+								</a>
+							</div>
+
+							<div class="nav__info">
+								<div class="nav__info-body">
+									<div class="nav__info-socials">
+										<div class="social">
+											<div class="social__icon">
+												<img src="../img/icons/email.svg" alt="email">
+											</div>
+
+											<div class="social__info">
+												<h3 class="social__title">Email</h3>
+												<a href="mailto:info@pronto.lv" class="social__text">info@pronto.lv</a>
+											</div>
+										</div>
+
+										<div class="social">
+											<div class="social__icon">
+												<img src="../img/icons/map.svg" alt="map">
+											</div>
+
+											<div class="social__info">
+												<h3 class="social__title">Адрес</h3>
+												<p class="social__text">Ģertrūdes iela 33/35 (Rīga) каб. 411 (лифт)</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="nav__consultaition">
+										<div class="nav__consultaition-info">
+											<p class="nav__consultaition-text">Для консультации</p>
+											<a href="tel:+37126858674" class="nav__consultaition-tel">+371 2751 9751</a>
+										</div>
+										<div class="nav__consultaition-img">
+											<img src="../img/icons/whatsapp.svg" alt="whatsapp">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav__bottom">
+				<div class="container">
+					<div class="nav__bottom-body">
+						<ul class="nav__menu">
+							<li><a href="index.html" class="nav__menu-link">ГЛАВНАЯ</a></li>
+							<li><a href="#news" class="nav__menu-link">НОВОСТИ</a></li>
+							<li><a href="category_a.html" class="nav__menu-link active">ЦЕНЫ</a></li>
+							<li><a href="#teachers" class="nav__menu-link">НАШ КОЛЛЕКТИВ</a></li>
+							<li><a href="#contacts" class="nav__menu-link">КОНТАКТЫ</a></li>
+						</ul>
+
+						<div class="nav__search">
+							<div class="nav__search-icon">
+								<img src="../img/icons/search.svg" alt="search">
+							</div>
+
+							<form action="#" class="nav__search-form">
+								<input type="text" class="nav__search-input" placeholder="Поиск">
+								<button type="submit" class="nav__search-btn">
+									<img src="../img/icons/search.svg" alt="search">
+								</button>
+							</form>
+						</div>
+
+						<button class="btn popup-btn" data-to-popup="learning-popup">
+							<span class="btn__icon">
+								<img src="../img/icons/tel.svg" alt="tel">
+							</span>
+							Обратная связь
+						</button>
+
+						<div class="nav__burger burger" id="nav-burger">
+							<div class="burger__btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="burger__bg"></div>
+
+							<div class="burger__menu">
+								<div class="burger__nav">
+									<div class="burger__close-btn"></div>
+								</div>
+
+								<ul class="burger__list">
+									<li><a href="index.html" class="burger__link">ГЛАВНАЯ</a></li>
+									<li><a href="#news" class="burger__link">НОВОСТИ</a></li>
+									<li><a href="category_a.html" class="burger__link">ЦЕНЫ</a></li>
+									<li><a href="#teachers__teacher-text" class="burger__link">НАШ КОЛЛЕКТИВ</a></li>
+									<li><a href="#contacts__body" class="burger__link">КОНТАКТЫ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Crumbs -->
+
+		<div class="crumbs">
+			<div class="container">
+				<ul class="crumbs__list">
+					<li><a href="#">Категории и цены</a></li>
+					<li>В категория</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Questions -->
+
+		<section class="questions">
+			<div class="container">
+				<div class="questions__carts">
+					<div class="questions__cart">
+						<div class="questions__cart-wrap">
+							<div class="questions__cart-top">
+								<div class="questions__cart-icon">
+									<img src="../img/questions/1.svg" alt="1">
+								</div>
+
+								<h4 class="questions__cart-title">Kas ir A kategorija ?</h4>
+							</div>
+
+							<p class="questions__cart-text">Tā ir iespēja iegūt A kategorijas tiesības , kuras atļauj pārvietoties ar motocikliem un tricikliem , atkarībā no tava vecuma .
+							<p class="questions__cart-text">A kategorija ir sadalīta trīs daļās (A1,A2 un A)</p>
+							<p class="questions__cart-text">A1. Drīkst iegūt no 16. gadu vecuma .  Motora tilpums un jauda nepārsniedz 125 cm3 un 11 kW . Autoskola nav obligāta !</p>
+							<p class="questions__cart-text">A2. Drīkst iegūt no 18. gadu vecuma . Motora jauda nepārsniedz 35 kW .</p>
+							<p class="questions__cart-text">A. Drīkst iegūt no 24. gadu vecuma . Motora jauda pārsniedz 15 kW .</p>
+						</div>
+					</div>
+
+					<div class="questions__cart">
+						<div class="questions__cart-wrap">
+							<div class="questions__cart-top">
+								<div class="questions__cart-icon">
+									<img src="../img/questions/2.svg" alt="2">
+								</div>
+
+								<h4 class="questions__cart-title">Kas man jādara lai iegūtu A kategoriju ?</h4>
+							</div>
+							<p class="questions__cart-text">A kategorijas apmācību var uzsākt , ja tev jau ir B kategorijas tiesības.</p>
+							<p class="questions__cart-text">Jāreģistrējas autoskolā , jāparaksta līgums par tālāko mācību norisi . Jāpārliecinās ka ir derīga medicīniskā izziņa . ja nav tad medicīnisko komisiju jāiziet atkārtoti . Autoskola var ieteikt kur to var izdarīt ātrāk un ērtāk ! Neaizmirsti ka tagad tev vajag arī A kategoriju . Jāpiesakās sev ērtākajā grupā un var sākt mācīties .</p>
+						</div>
+					</div>
+
+					<div class="questions__cart">
+						<div class="questions__cart-wrap">
+							<div class="questions__cart-top">
+								<div class="questions__cart-icon">
+									<img src="../img/questions/3.svg" alt="3">
+								</div>
+
+								<h4 class="questions__cart-title">Cik tas maksā ?</h4>
+							</div>
+							<p class="questions__cart-text">Autoskolas izmaksas !</p>
+							<p class="questions__cart-text">Reģistrēšanās autoskolā un dokumentu noformēšana 30 eiro</p>
+							<p class="questions__cart-text">Medicīniskā izziņa 30 eiro</p>
+							<p class="questions__cart-text">Pirmās medicīniskās palīdzības kurss  (Ja nepieciešams) 55 eiro</p>
+							<p class="questions__cart-text">Teorētiskās apmācības kurss. 3. nodarbības, 15. akadēmiskās(45min) stundas 20 eiro</p>
+							<p class="questions__cart-text">Skolas teorijas eksāmens. 30. jautājumi, pieļaujamas 2. kļūdas 10 eiro</p>
+							<p class="questions__cart-text">Praktiskā apmācība. Obligātas 10. akadēmiskās(45. min) stundas</p>
+							<p class="questions__cart-text">1. akadēmiskā(45. min) stunda   20 eiro</p>
+							<p class="questions__cart-text">Skolas braukšanas eksāmens 40 eiro</p>
+
+							<p class="questions__cart-text">CSDD izmaksas !</p>
+							<p class="questions__cart-text">Mācību braukšanas atļauja 6,16 eiro</p>
+							<p class="questions__cart-text">Valsts teorijas eksāmens 12,63 eiro</p>
+							<p class="questions__cart-text">Valsts braukšanas eksāmens 54,93 eiro</p>
+							<p class="questions__cart-text">Tiesību izsniegšana 22,05 eiro</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Lessons -->
+
+		<section class="lessons">
+			<div class="container">
+				<div class="lessons__head">
+					<h2 class="lessons__head-title">Список занятий</h2>
+				</div>
+
+				<div class="lessons__content">
+					<table class="lessons__table">
+						<thead>
+							<tr>
+								<th>Начало занятий</th>
+								<th>Место</th>
+								<th>Время</th>
+								<th>Дни</th>
+								<th>Язык</th>
+								<th>Преподаватель</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>16.06.2021</td>
+								<td>ОНЛАЙН</td>
+								<td>09:00-13:05</td>
+								<td>
+									<div class="lessons__table-days">
+										<p class="lessons__table-day active">1</p>
+										<p class="lessons__table-day">2</p>
+										<p class="lessons__table-day active">3</p>
+										<p class="lessons__table-day">4</p>
+										<p class="lessons__table-day active">5</p>
+										<p class="lessons__table-day">6</p>
+										<p class="lessons__table-day">7</p>
+									</div>
+								</td>
+								<td>RU</td>
+								<td class="lessons__table-name">Svetlana Sidiropulo</td>
+								<td>
+									<a href="#" class="lessons__table-btn">Регистрироваться</a>
+								</td>
+							</tr>
+							<tr>
+								<td>16.06.2021</td>
+								<td>ОНЛАЙН</td>
+								<td>09:00-13:05</td>
+								<td>
+									<div class="lessons__table-days">
+										<p class="lessons__table-day active">1</p>
+										<p class="lessons__table-day">2</p>
+										<p class="lessons__table-day active">3</p>
+										<p class="lessons__table-day">4</p>
+										<p class="lessons__table-day active">5</p>
+										<p class="lessons__table-day">6</p>
+										<p class="lessons__table-day">7</p>
+									</div>
+								</td>
+								<td>RU</td>
+								<td class="lessons__table-name">Svetlana Sidiropulo</td>
+								<td>
+									<a href="#" class="lessons__table-btn">Регистрироваться</a>
+								</td>
+							</tr>
+							<tr>
+								<td>16.06.2021</td>
+								<td>ОНЛАЙН</td>
+								<td>09:00-13:05</td>
+								<td>
+									<div class="lessons__table-days">
+										<p class="lessons__table-day active">1</p>
+										<p class="lessons__table-day">2</p>
+										<p class="lessons__table-day active">3</p>
+										<p class="lessons__table-day">4</p>
+										<p class="lessons__table-day active">5</p>
+										<p class="lessons__table-day">6</p>
+										<p class="lessons__table-day">7</p>
+									</div>
+								</td>
+								<td>RU</td>
+								<td class="lessons__table-name">Svetlana Sidiropulo</td>
+								<td>
+									<a href="#" class="lessons__table-btn">Регистрироваться</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__label">
+						<a href="#" class="logo">
+							<img src="../img/pronto.png" alt="pronto logo">
+						</a>
+
+						<h3 class="footer__label-title">Автошкола Pronto</h3>
+
+						<ul class="footer__label-list">
+							<li>SIA KIK</li>
+							<li>Reģ.Nr.: 40203321851</li>
+							<li>Banka: Swedbank AS</li>
+							<li>SWIFT: HABALV22</li>
+							<li>Konts: LV17HABA0551050920249</li>
+						</ul>
+
+						<div class="footer__label-socials">
+							<a href="#" class="footer__label-social">
+								<img src="../img/icons/telegram.svg" alt="telegram">
+							</a>
+
+							<a href="#" class="footer__label-social">
+								<img src="../img/icons/instagram.svg" alt="instagram">
+							</a>
+
+							<a href="#" class="footer__label-social">
+								<img src="../img/icons/facebook.svg" alt="facebook">
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__menus">
+						<ul class="footer__menu">
+							<li class="footer__menu-title">информация</li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Наш коллектив</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+
+						<ul class="footer__menu">
+							<li class="footer__menu-title">Связаться с нами</li>
+							<li>
+								<div class="social">
+									<div class="social__icon">
+										<img src="../img/icons/phone_2.svg" alt="phone">
+									</div>
+
+									<div class="social__info">
+										<h3 class="social__title">ТЕЛЕФОН</h3>
+										<a href="tel:+37126858674" class="social__text">+371 2751 9751</a>
+									</div>
+
+									<div class="social__social">
+										<img src="../img/icons/whatsapp.svg" alt="whatsapp">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="social">
+									<div class="social__icon">
+										<svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M22.6603 5.43555H7.91623C7.36175 5.43652 6.83026 5.65722 6.43818 6.0493C6.04611 6.44138 5.82541 6.97287 5.82443 7.52735V15.5193L2.11826 12.8996L4.57243 10.8281C4.7347 10.6913 4.83598 10.4956 4.85398 10.2841C4.87198 10.0726 4.80522 9.86263 4.66841 9.70036C4.53159 9.53808 4.33591 9.43681 4.12442 9.41881C3.91293 9.40081 3.70295 9.46756 3.54068 9.60438L0.283623 12.3551C0.194763 12.4302 0.12335 12.5237 0.0743648 12.6293C0.0253796 12.7348 1.35174e-06 12.8497 0 12.966V28.6084C0.00146347 29.3748 0.306584 30.1095 0.848548 30.6514C1.39051 31.1934 2.12515 31.4985 2.89161 31.5H27.517C28.2835 31.4985 29.0181 31.1934 29.5601 30.6514C30.102 30.1095 30.4072 29.3748 30.4086 28.6084V12.966C30.4086 12.8497 30.3832 12.7348 30.3343 12.6293C30.2853 12.5237 30.2139 12.4302 30.125 12.3551L27.0334 9.74404C26.9533 9.67573 26.8604 9.62393 26.7602 9.5916C26.66 9.55927 26.5543 9.54706 26.4494 9.55566C26.3444 9.56426 26.2422 9.59351 26.1485 9.64172C26.0549 9.68993 25.9717 9.75616 25.9037 9.83661C25.8358 9.91705 25.7844 10.0101 25.7525 10.1105C25.7206 10.2109 25.7088 10.3165 25.7178 10.4215C25.7269 10.5264 25.7565 10.6285 25.8052 10.7219C25.8538 10.8154 25.9203 10.8983 26.0011 10.9659L28.3654 12.963L24.754 15.5193V7.52858C24.7533 6.97356 24.5325 6.44148 24.14 6.04908C23.7475 5.65669 23.2154 5.43604 22.6603 5.43555ZM7.4222 7.52735C7.4222 7.39681 7.47405 7.27162 7.56636 7.17932C7.65866 7.08701 7.78385 7.03516 7.91439 7.03516H22.6603C22.7909 7.03516 22.9161 7.08701 23.0084 7.17932C23.1007 7.27162 23.1525 7.39681 23.1525 7.52735V16.6507L15.2886 22.2142L7.42281 16.6507L7.4222 7.52735ZM27.517 29.9004H2.89407C2.55171 29.8994 2.22365 29.763 1.98156 29.5209C1.73948 29.2788 1.60305 28.9507 1.60207 28.6084V14.4918L11.1136 21.2206L4.38478 26.3726C4.30057 26.4362 4.22976 26.5158 4.17644 26.6068C4.12312 26.6979 4.08834 26.7986 4.07411 26.9031C4.05987 27.0077 4.06647 27.114 4.09351 27.216C4.12055 27.318 4.1675 27.4136 4.23166 27.4974C4.29583 27.5811 4.37592 27.6514 4.46735 27.704C4.55877 27.7567 4.65972 27.7908 4.76436 27.8043C4.86901 27.8177 4.97529 27.8104 5.07708 27.7826C5.17887 27.7549 5.27417 27.7072 5.35747 27.6425L12.4813 22.1878L14.8266 23.8489C14.9615 23.9443 15.1227 23.9954 15.288 23.9954C15.4532 23.9954 15.6144 23.9443 15.7494 23.8489L18.0947 22.1878L25.2191 27.6425C25.3876 27.7697 25.5996 27.8251 25.8088 27.7966C26.018 27.7681 26.2075 27.658 26.3359 27.4904C26.4643 27.3228 26.5212 27.1112 26.4942 26.9018C26.4672 26.6924 26.3585 26.5022 26.1918 26.3726L19.4636 21.2206L28.8115 14.6087V28.6084C28.8105 28.9512 28.6737 29.2796 28.4311 29.5218C28.1885 29.7639 27.8598 29.9001 27.517 29.9004Z" fill="#fff"/>
+											<path d="M10.8583 10.8552H19.7177C19.9298 10.8552 20.1332 10.771 20.2832 10.621C20.4332 10.471 20.5175 10.2675 20.5175 10.0554C20.5175 9.8433 20.4332 9.63987 20.2832 9.48987C20.1332 9.33988 19.9298 9.25562 19.7177 9.25562H10.8583C10.6462 9.25562 10.4427 9.33988 10.2927 9.48987C10.1427 9.63987 10.0585 9.8433 10.0585 10.0554C10.0585 10.2675 10.1427 10.471 10.2927 10.621C10.4427 10.771 10.6462 10.8552 10.8583 10.8552Z" fill="#fff"/>
+											<path d="M10.8583 14.1886H19.7177C19.9298 14.1886 20.1332 14.1043 20.2832 13.9543C20.4332 13.8044 20.5175 13.6009 20.5175 13.3888C20.5175 13.1767 20.4332 12.9732 20.2832 12.8232C20.1332 12.6733 19.9298 12.589 19.7177 12.589H10.8583C10.6462 12.589 10.4427 12.6733 10.2927 12.8232C10.1427 12.9732 10.0585 13.1767 10.0585 13.3888C10.0585 13.6009 10.1427 13.8044 10.2927 13.9543C10.4427 14.1043 10.6462 14.1886 10.8583 14.1886Z" fill="#fff"/>
+											<path d="M17.7237 16.7222C17.7237 16.51 17.6394 16.3066 17.4894 16.1566C17.3394 16.0066 17.136 15.9224 16.9239 15.9224H10.8583C10.6462 15.9224 10.4427 16.0066 10.2927 16.1566C10.1427 16.3066 10.0585 16.51 10.0585 16.7222C10.0585 16.9343 10.1427 17.1377 10.2927 17.2877C10.4427 17.4377 10.6462 17.522 10.8583 17.522H16.9239C17.136 17.522 17.3394 17.4377 17.4894 17.2877C17.6394 17.1377 17.7237 16.9343 17.7237 16.7222Z" fill="#fff"/>
+											<path d="M19.0458 2.99619L15.7236 0.188868C15.5792 0.0669097 15.3964 0 15.2074 0C15.0184 0 14.8356 0.0669097 14.6912 0.188868L11.3689 2.99619C11.2079 3.13339 11.1078 3.32879 11.0906 3.53962C11.0733 3.75046 11.1402 3.95954 11.2768 4.12113C11.4133 4.28271 11.6083 4.38363 11.819 4.40179C12.0298 4.41996 12.2391 4.35389 12.4013 4.21804L15.2055 1.8457L18.0135 4.21743C18.1761 4.34821 18.3835 4.41022 18.5912 4.39024C18.799 4.37025 18.9907 4.26984 19.1254 4.11045C19.2602 3.95105 19.3273 3.7453 19.3124 3.53712C19.2975 3.32893 19.2019 3.13481 19.0458 2.99619Z" fill="#fff"/>
+										</svg>
+									</div>
+
+									<div class="social__info">
+										<h3 class="social__title">ЭЛЕКТРОННАЯ ПОЧТА</h3>
+										<a href="mailto:info@pronto.lv" class="social__text">info@pronto.lv</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<a href="#nav" class="footer__scroll">
+						<p>Top</p>
+					</a>
+				</div>
+
+				<div class="footer__bottom">
+					<p class="footer__bottom-rights">Все права защищены © Автошкола Pronto.</p>
+					<div class="footer__bottom-line"></div>
+					<div class="footer__bottom-dev">
+						<p>Разработка сайта</p>
+						<img src="../img/ispace.png" alt="ispace">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+</html>
