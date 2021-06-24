@@ -1329,6 +1329,7 @@ a.social__text:hover {
 }
 
 .questions__cart {
+	display: flex;
 	flex: 0 1 50%;
 }
 
