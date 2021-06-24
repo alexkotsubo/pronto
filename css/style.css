@@ -2204,6 +2204,10 @@ li.footer__menu-title::before {
 		align-items: flex-start;
 	}
 
+	.nav__info-socials .social:last-child {
+		margin-top: 5px;
+	}
+
 	/* News */
 
 	.news__head-text {
@@ -2219,6 +2223,13 @@ li.footer__menu-title::before {
 
 	.categories__category {
 		flex-basis: 100%;
+	}
+
+	/* Footer */
+
+	.footer__label-list li {
+		letter-spacing: 0px;
+		font-size: 15px;
 	}
 }
 
