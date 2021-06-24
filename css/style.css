@@ -2227,9 +2227,13 @@ li.footer__menu-title::before {
 
 	/* Footer */
 
+	.footer__label {
+		padding: 13px 20px 30px;
+	}
+
 	.footer__label-list li {
 		letter-spacing: 0px;
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 
