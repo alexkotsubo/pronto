@@ -1331,9 +1331,11 @@ a.social__text:hover {
 .questions__cart {
 	display: flex;
 	flex: 0 1 50%;
+	max-width: 100%;
 }
 
 .questions__cart-wrap {
+	width: 100%;
 	margin-right: 30px;
 	margin-top: 50px;
 	font-family: 'Roboto', sans-serif;
@@ -1374,11 +1376,49 @@ a.social__text:hover {
 .questions__cart-item {
 	color: #868E96;
 	padding: 10px;
+}
+
+.questions__cart_table .questions__cart-wrap {
+	overflow: auto;
+}
+
+.questions__cart-table table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-top: 7px;
+}
+
+.questions__cart-table tr {
 	border-bottom: 1px solid #BEBEBE;
 }
 
-.questions__cart-item:last-child {
+.questions__cart-table tr:last-child {
 	border-bottom: none;
+}
+
+.questions__cart-table td {
+	padding: 10px;
+	white-space: nowrap;
+}
+
+.questions__cart-table td:first-child {
+	display: flex;
+	align-items: center;
+}
+
+.questions__cart-table td:last-child {
+	font-weight: 700;
+}
+
+.questions__cart-table td:first-child:before {
+	content: '';
+	display: block;
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+	background: #FFB932;
+	margin-right: 10px;
 }
 
 /* Lessons */
